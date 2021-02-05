@@ -1,0 +1,19 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title  Container diagram for {{pascalCase name}}
+
+
+Person(user, "{{name}}'s User", "Description.")
+
+System_Boundary({{snakeCase name}}, "{{name}}") {
+    Container(web_app, "Application", "Techstack", "Description.")
+    ContainerDb(database, "Database", "Tech", "Description.")
+}
+
+Rel(user, {{snakeCase name}}, "Uses")
+System_Ext(external_system, "External system", "Description.")
+
+@enduml

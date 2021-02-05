@@ -1,0 +1,18 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title  Component diagram for {{pascalCase name}}
+
+Container(outerComponent, "Some other component", "tech stack", "Description.")
+ContainerDb(db, "Database", "Relational Database Schema", "Description")
+System_Ext(mbs, "External System", "Description.")
+
+Container_Boundary({{snakeCase name}}, "{{pascalCase name}}") {
+    Component(c1, "Component 1", "tech stack", "Description.")
+    Rel(c1, mbs, "Uses", "XML/HTTPS")
+}
+
+Rel(c1, db, "Uses", "Protocol")
+@enduml

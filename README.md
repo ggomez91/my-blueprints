@@ -13,7 +13,15 @@ Creates a react component within its own Folder. It includes:
 - Sass module file
 - Functional component file
 
-![alt text](react-component.png)
+![alt text](doc/react-component.png)
+
+### C4 PlantUML Diagrams
+
+Creates C4 diagrams with the basic shapes:
+
+- Context Diagram
+- Container Diagram
+- Component Diagram
 
 # Usage
 
