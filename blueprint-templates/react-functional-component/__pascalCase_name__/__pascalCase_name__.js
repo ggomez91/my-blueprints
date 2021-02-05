@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './{{pascalCase name}}.style.module.scss';
+import styles from './{{pascalCase name}}.module.scss';
 
 export default function {{pascalCase name}}({}) {
     return (

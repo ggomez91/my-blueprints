@@ -2,6 +2,19 @@
 
 My own blueprints for Vs Code.
 
+## Templates
+
+### React functional Component (JS and TS)
+
+Creates a react component within its own Folder. It includes:
+
+- Index file
+- Jest spec file with snapshot test
+- Sass module file
+- Functional component file
+
+![alt text](react-component.png)
+
 # Usage
 
 1. Install the [Blueprint](https://marketplace.visualstudio.com/items?itemName=teamchilla.blueprint) VS code extension
